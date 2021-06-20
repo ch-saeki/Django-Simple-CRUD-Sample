@@ -27,6 +27,12 @@ class Item(models.Model):
         choices=SEX_CHOICES,
         default=1
     )
+    image = models.ImageField(
+        verbose_name='イメージ画像',
+        upload_to='images',
+        blank=True, 
+        null=True
+    )
     memo = models.TextField(
         verbose_name='備考',
         max_length=300,
