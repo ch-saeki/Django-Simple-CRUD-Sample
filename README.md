@@ -18,10 +18,10 @@ Windows Command Prompt
 
 ```
 cd Django-Simple-CRUD-Sample
-python -m venv env
+python -m venv .venv
 env\Scripts\activate
-pip install -r requirements.txt
-manage.py migrate
+python -m pip install -r requirements.txt
+python -m manage.py migrate
 manage.py createsuperuser 
 manage.py runserver
 ```
