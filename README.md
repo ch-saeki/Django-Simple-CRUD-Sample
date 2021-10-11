@@ -19,11 +19,10 @@ Windows Command Prompt
 ```
 cd Django-Simple-CRUD-Sample
 python -m venv .venv
-env\Scripts\activate
 python -m pip install -r requirements.txt
-python -m manage.py migrate
-manage.py createsuperuser 
-manage.py runserver
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
 ```
 
 Open URL http://localhost:8000
