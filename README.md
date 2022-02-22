@@ -14,15 +14,21 @@ Django 2.0.2
 
 ## Usage
 
-Windows Command Prompt
-
+use SQLite and local mode.
 ```
-cd Django-Simple-CRUD-Sample
-python -m venv .venv
-python -m pip install -r requirements.txt
-python manage.py migrate
-python manage.py createsuperuser
-python manage.py runserver
+$ cd Django-Simple-CRUD-Sample
+$ python -m venv .venv
+$ (.venv)python -m pip install -r requirements.txt
+$ (.venv)python manage.py migrate
+$ (.venv)python manage.py createsuperuser
+$ (.venv)python manage.py runserver
+```
+
+use MySQL and docker mode.
+```
+docker build ./
+docker-compose up -d
+docker-compose run --rm web python manage.py migrate
 ```
 
 Open URL http://localhost:8000
